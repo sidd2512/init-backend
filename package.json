@@ -1,0 +1,31 @@
+{
+  "name": "init-backend",
+  "version": "1.0.1",
+  "description": "CLI tool to scaffold a backend project with Express/HTTP, DB, auth, TypeScript or JavaScript support.",
+  "type": "module",
+  "bin": {
+    "init-backend": "./bin/index.js"
+  },
+  "main": "./bin/index.js",
+  "keywords": [
+    "cli",
+    "backend",
+    "scaffold",
+    "setup",
+    "nodejs",
+    "express",
+    "typescript",
+    "javascript"
+  ],
+  "author": "Siddharth",
+  "license": "MIT",
+  "dependencies": {
+    "chalk": "^5.3.0",
+    "inquirer": "^9.2.15",
+    "fs-extra": "^11.1.1"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
+
