@@ -1,11 +1,8 @@
-Here is the README file based on your specifications:
-
-````markdown
 # 🚀 SETUP BACKEND
 
-[![version](https://img.shields.io/npm/v/inti-backend.svg)](https://www.npmjs.com/package/inti-backend)
+[![version](https://img.shields.io/npm/v/init-backend.svg)](https://www.npmjs.com/package/init-backend)
 
-A simple CLI tool to scaffold a professional backend project using JavaScript or TypeScript in seconds.
+Quickly set up a clean backend project using JavaScript or TypeScript.
 
 ---
 
@@ -14,9 +11,8 @@ A simple CLI tool to scaffold a professional backend project using JavaScript or
 Run directly with `npx`:
 
 ```bash
-npx inti-backend
+npx init-backend
 ```
-````
 
 Or install globally:
 
@@ -35,13 +31,6 @@ npm install -g inti-backend
 ✅ Prettier + ESLint setup  
 ✅ Clean project structure with auto dependency install  
 ✅ Useful scripts like dev, start, lint, and format
-
----
-
-## 📸 Demo
-
-Here’s a preview of the generated project in VS Code:  
-_(✨ Replace with the actual screenshot URL once you upload it to your GitHub repository.)_
 
 ---
 
@@ -69,7 +58,7 @@ your-project/
 Just run:
 
 ```bash
-npx inti-backend
+npx init-backend
 ```
 
 Answer a few questions (project name, language, DB, auth), and it sets up everything.
@@ -91,6 +80,10 @@ _Scripts will adapt automatically if you're using TypeScript._
 
 ---
 
+## 📸 Demo
+
+![structure](https://github.com/sidd2512/init-backend/blob/main/demo.png)
+
 ## 🤝 Contributing
 
 Love the idea? Help it grow:
@@ -99,7 +92,7 @@ Love the idea? Help it grow:
 - Make your changes
 - Submit a pull request
 
-GitHub: [https://github.com/your-username/inti-backend](https://github.com/your-username/inti-backend)
+GitHub: [https://github.com/sidd2512/init-backend](https://github.com/sidd2512/init-backend)
 
 ---
 
