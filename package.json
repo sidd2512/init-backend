@@ -1,6 +1,6 @@
 {
   "name": "init-backend",
-  "version": "1.0.1",
+  "version": "1.0.3",
   "description": "Quickly set up a clean backend project using JavaScript or TypeScript.",
   "type": "module",
   "bin": {

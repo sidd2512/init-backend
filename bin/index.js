@@ -2,9 +2,8 @@
 
 import { fileURLToPath } from 'url';
 import path from 'path';
-import fs from 'fs-extra';
 import  promptUser  from '../lib/prompts.js';
-import { createStructure } from '../lib/createStructure.js';
+import  createStructure  from '../lib/createStructure.js';
 import  setupPackageJson  from '../lib/setupPackageJson.js';
 import chalk from 'chalk';
 
@@ -15,7 +14,8 @@ console.log(chalk.greenBright('🚀 Starting backend project setup...'));
 
 try {
   const options = await promptUser();
-  const projectDir = path.join(process.cwd(), options.projectName);
+  const defaultProjectName = 'backend';
+  const projectDir = options.projectName ? path.join(process.cwd(), options.projectName) : path.join(process.cwd(), defaultProjectName);
 
   // Step 1: Create folder structure and basic files
   await createStructure(options, projectDir);
@@ -28,7 +28,7 @@ try {
   // Final message
   console.log(chalk.greenBright('✅ Setup complete!'));
   console.log(chalk.yellowBright('👉 Next steps:'));
-  console.log(`  cd ${options.projectName}`);
+  console.log(`  cd ${options.projectName || defaultProjectName}`);
   console.log(`  npm run dev`);
 } catch (error) {
   console.error(chalk.red('❌ Setup failed:'), error.message);
